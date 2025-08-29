@@ -1,0 +1,140 @@
+/* === SF Pro Font Faces === */
+@font-face {
+  font-family: "SF Pro";
+  src: url("../assets/fonts/SF-Pro-Display-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("../assets/fonts/SF-Pro-Display-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("../assets/fonts/SF-Pro-Display-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("../assets/fonts/SF-Pro-Display-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Global Styles === */
+body {
+  margin: 0;
+  font-family: "SF Pro", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #1c1c1e;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.navbar .logo {
+  font-size: 1.25rem;
+  font-weight: 600; /* changed from 550 → proper SF Pro weight */
+  color: #E63946; /* Crimson accent */
+}
+
+.navbar nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #1c1c1e;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar nav a:hover {
+  color: #D62828; /* Deep Vermilion */
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 8rem 2rem;
+  background: #fff;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.btn.primary {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  background: #FF6B35; /* Ember Orange solid */
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn.primary:hover {
+  background: #E85D04; /* Darker Ember Orange on hover */
+}
+
+/* Feature Section */
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 6rem 3rem;
+}
+
+.feature-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-text p {
+  font-size: 1.125rem;
+  color: #555;
+}
+
+.feature-visual {
+  height: 300px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #E63946, #FF6B35, #D62828, #FF8FA3);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.875rem;
+  color: #666;
+  background: #f9f9f9;
+}
